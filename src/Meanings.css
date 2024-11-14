@@ -1,6 +1,20 @@
 .meaning {
-  padding: 10px;
+  padding: 20px;
   background-color: #f8f4f5;
   border-radius: 10px;
   margin: 15px 10px;
+  font-size: 18px;
+}
+
+h3 {
+  color: #35384e;
+  letter-spacing: 2px;
+}
+
+.error {
+  color: rgb(185, 4, 4);
+}
+
+.example{
+  opacity: 0.85;
 }

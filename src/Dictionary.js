@@ -10,6 +10,7 @@ export default function Dictionary(){
 
   function handleResponse(response){
     setResults(response.data);
+    console.log(response);
   }
   function search(event){
     event.preventDefault();
@@ -37,8 +38,8 @@ export default function Dictionary(){
             </div>
            <div>
               <form onSubmit={search}>
-                <input type ="search" onChange = {handleKeywordChange}/>
-                <input type ="submit" />
+                <input type ="search" onChange = {handleKeywordChange} autoFocus="on" placeholder="Word Search" className="search" />
+                <input type ="submit" value="Search" className="submit"/>
               </form>
             </div>
           </div>
