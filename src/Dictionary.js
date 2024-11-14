@@ -45,7 +45,7 @@ export default function Dictionary(){
           </div>
         </div>
       </header>
-      <Results results={results}/>
+      <Results results={results} word={keyword}/>
     </div>
   )
 }

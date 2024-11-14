@@ -6,7 +6,7 @@ export default function App() {
     <div className="App" >
       <div className ="container">
         <Dictionary />
-        <footer>
+        <footer className="text-center">
           coded by Kenzi👺
         </footer>
       </div>

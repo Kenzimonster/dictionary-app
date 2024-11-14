@@ -1,3 +1,14 @@
 .results {
   margin: 5px;
 }
+.error-message {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  margin-top: 20px;
+}
+.error-message h2 {
+  color: red;
+  font-size: 48px;
+}

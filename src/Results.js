@@ -16,6 +16,11 @@ export default function Results(props){
       </div>
     )
   } else {
-    return <h2 className="text-capitalize">The Inquisition has no record of your requested word</h2>
+    return( 
+      <div className="error-message">
+        <h2>ERROR</h2>
+        <p>The Inquisition has no record of your requested word "{props.word}"</p>
+      </div>
+    )
   }
 }
