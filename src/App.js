@@ -10,7 +10,7 @@ export default function App() {
           coded by Kenzi👺and is{" "}
           <a href="https://github.com/Kenzimonster/dictionary-app" target="_blank" rel="noreferrer">open-soured on GitHub</a>
         {" "}and{" "}
-        <a href="https://bejewelled-sfogliatella-dbe6b3.netlify.app/" target="_blank" rel="noreferre">hosted on Netlify</a>
+        <a href="https://bejewelled-sfogliatella-dbe6b3.netlify.app/" target="_blank" rel="noreferrer">hosted on Netlify</a>
         </footer>
       </div>
     </div>
