@@ -11,6 +11,6 @@ export default function Synonyms(props){
       </ul>
     );
   } else {
-    return null;
+    return (<span> No synonyms on record.</span>);
   }
 }
