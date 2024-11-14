@@ -18,5 +18,4 @@ export default function Results(props){
   } else {
     return <h2 className="text-capitalize">The Inquisition has no record of your requested word</h2>
   }
-  
 }
