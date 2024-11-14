@@ -1,0 +1,16 @@
+header {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f8f4f5;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-top: 40px;
+  font-family: "Grenze Gotisch", serif;
+}
+form {
+  font-size: 24px;
+  margin-top: 40px;
+}
