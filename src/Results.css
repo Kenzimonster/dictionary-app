@@ -8,6 +8,7 @@ color: azure;
 
 .phonetics {
   color: azure;
+  letter-spacing: 5px;
 }
 
 .error-message {
