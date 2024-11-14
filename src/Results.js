@@ -18,8 +18,8 @@ export default function Results(props){
   } else {
     return( 
       <div className="error-message">
-        <h2>ERROR</h2>
-        <p>The Inquisition has no record of your requested word "{props.word}"</p>
+        <h2>! ERROR !</h2>
+        <p>The Inquisition has no record of your requested word "{props.word}".</p>
       </div>
     )
   }
