@@ -3,14 +3,18 @@ import "./Dictionary.css";
 import axios from "axios";
 import BattleSisterClear from "./BattleSisterClear.png";
 import Results from "./Results";
+import Photos from "./Photos";
 
 export default function Dictionary(){
   let [keyword, setKeyword] = useState(" ");
   let [results, setResults] = useState(null);
+  let [ photos, setPhotos ] = useState(null);
 
   function handleResponse(response){
     setResults(response.data);
-    console.log(response);
+  }
+  function handlePexelsResponse(response){
+    setPhotos(response.data.photos);
   }
   function search(event){
     event.preventDefault();
@@ -20,6 +24,11 @@ export default function Dictionary(){
     let query = keyword;
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${query}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+    //using SheCodes Images API
+    //documentation https://www.shecodes.io/learn/apis/images
+    let photoKey = `3at0foeb77eba84a5c21cf21f38b13e9`;
+    let photoUrl =`https://api.shecodes.io/images/v1/search?query=${keyword}&key=${photoKey}`;
+    axios.get(photoUrl).then(handlePexelsResponse);
   }
   function handleKeywordChange(event){
     setKeyword(event.target.value);
@@ -45,7 +54,14 @@ export default function Dictionary(){
           </div>
         </div>
       </header>
-      <Results results={results} word={keyword}/>
+      <div className="row">
+        <div className="col">
+          <Results results={results} word={keyword}/>
+        </div>
+       <div className="col mt-5">
+         <Photos photos={photos}/>
+        </div>
+      </div>
     </div>
   )
 }
