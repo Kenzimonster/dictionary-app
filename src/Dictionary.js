@@ -55,12 +55,8 @@ export default function Dictionary(){
         </div>
       </header>
       <div className="row">
-        <div className="col">
           <Results results={results} word={keyword}/>
-        </div>
-       <div className="col mt-5">
          <Photos photos={photos}/>
-        </div>
       </div>
     </div>
   )
