@@ -6,3 +6,8 @@ footer {
 footer a{
   color: darkblue;
 }
+@media(max-width:576px){
+  footer{
+    font-size: 10px;
+  }
+}

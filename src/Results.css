@@ -34,3 +34,11 @@ color: azure;
 .error-message h2 {
   color: rgba(255, 0, 0, 0.644);
 }
+ @media(max-width:576px){
+  h2, .phonetics{
+    text-align: center;
+  }
+  h2{
+    margin-top: 15px;
+  }
+ }

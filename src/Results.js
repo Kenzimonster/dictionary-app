@@ -1,8 +1,10 @@
 import React from "react";
 import Meanings from "./Meanings";
 import "./Results.css";
+import Phonetics from "./Phonetics";
 
 export default function Results(props){
+  console.log(props.results);
   if  (props.results=== null){
     return (
       <div className="col-12">
@@ -24,17 +26,17 @@ export default function Results(props){
       )
    } else {
      return (
-       <div className="col-6">
-          <div className="results">
-            <h2 className="text-capitalize">{props.results.word}</h2>
-            <p className="phonetics"><em>/ {props.results.phonetic} /</em></p>
-            {props.results.meanings.map(function (meaning, index){
-              return <div key={index}>
-               <Meanings  meaning={meaning} />
-              </div>
-           })}
-         </div>
-       </div>
+        <div className=" col-12 col-md-8 col-lg-6">
+            <div className="results">
+             <h2 className="text-capitalize">{props.results.word}</h2>
+              <p className="phonetics"><em>/<Phonetics phonetic={props.results.phonetic}/> /</em></p>
+              {props.results.meanings.map(function (meaning, index){
+                return <div key={index}>
+                  <Meanings  meaning={meaning} />
+               </div>
+             })}
+            </div>
+          </div>
      )
    }
   }
